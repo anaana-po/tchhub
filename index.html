@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ТЕХНОХАБ — Логистические решения</title>
+    <title>ТЕХНОХАБ — Логистические и инженерные решения</title>
     <link rel="stylesheet" href="base.css">
-    <!-- Подключение иконок (например, FontAwesome или аналоги) -->
+    <!-- Подключение шрифтовых иконок FontAwesome -->
     <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
 
-    <!-- Top Bar -->
+    <!-- 1. TOP BAR -->
     <div class="top-bar">
         <div class="container">
             <div class="top-contacts">
@@ -21,127 +21,173 @@
         </div>
     </div>
 
-    <!-- Header -->
+    <!-- 2. HEADER С ГИБРИДНЫМ МЕНЮ -->
     <header class="main-header">
         <div class="container">
-            <div class="logo">
-                <img src="logo.png" alt="Technohub">
+            <div class="logo-wrapper" style="display: flex; align-items: center; gap: 15px;">
+                <img src="logo.png" alt="Technohub" width="40">
                 <div class="logo-text">
                     <strong>ТЕХНОХАБ</strong>
-                    <span>ЛОГИСТИЧЕСКИЕ РЕШЕНИЯ</span>
+                    <span style="display: block; font-size: 11px; opacity: 0.7;">ИНЖЕНЕРНАЯ ЭКОСИСТЕМА</span>
                 </div>
             </div>
+            
             <nav class="nav-menu">
                 <ul>
-                    <li><a href="./services.html">Услуги <i class="fas fa-chevron-down"></i></a></li>
-                    <li><a href="./industries.html">Отрасли <i class="fas fa-chevron-down"></i></a></li>
-                    <li><a href="./about.html">О компании <i class="fas fa-chevron-down"></i></a></li>
-                    <li><a href="./contacts.html">Контакты</a></li>
+                    <!-- Ссылки для ПЛАВНОГО СКРОЛЛИНГА по текущей главной странице -->
+                    <li><a href="#services" class="header-link">Услуги <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="#industrial" class="header-link">Отрасли <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="#about" class="header-link">О компании</a></li>
+                    <li><a href="#contacts" class="header-link">Контакты</a></li>
                 </ul>
             </nav>
+            
             <div class="header-actions">
                 <button class="search-btn"><i class="fas fa-search"></i></button>
-                <a href="./forma.html" class="btn btn-primary">Оставить заявку</a>
+                <a href="feedback.html" class="btn btn-primary">Оставить заявку</a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-<section class="hero">
-    <!-- Фоновое изображение справа -->
-    <div class="hero-image-wrapper">
-        <img src="main.png" alt="Промышленный груз">
-    </div>
-
-    <div class="container">
-        <div class="hero-content">
-            <p class="subtitle">СЛОЖНЫЕ ЗАДАЧИ — НАШ ПРОФИЛЬ</p>
-            <h1>Логистические решения <br>для B2B промышленности</h1>
-            <p class="hero-descr">Доставка тяжёлого и негабаритного оборудования <br>со всего мира.</p>
-            <a href="./forma.html" class="btn btn-accent">Рассчитать стоимость <i class="fas fa-arrow-right"></i></a>
+    <!-- 3. ГЛАВНЫЙ ЭКРАН (Hero Section) -->
+    <section id="index" class="hero">
+        <div class="hero-image-wrapper">
+            <img src="main.png" alt="Промышленный груз">
         </div>
-        
-        <!-- Features inside Hero -->
-        <div class="features-grid">
-            <div class="feature-item">
-                <i class="fas fa-check-circle"></i>
-                <div>
-                    <h3>Надёжность</h3>
-                    <p>Гарантируем сроки и безопасность</p>
-                </div>
+        <div class="container">
+            <div class="hero-content">
+                <p class="subtitle">СЛОЖНЫЕ ЗАДАЧИ — НАШ ПРОФИЛЬ</p>
+                <h1>Логистические решения <br>для B2B промышленности</h1>
+                <p class="hero-descr">Доставка тяжёлого и негабаритного оборудования <br>со всего мира.</p>
+                <a href="feedback.html" class="btn btn-accent">Рассчитать стоимость <i class="fas fa-arrow-right"></i></a>
             </div>
-            <div class="feature-item">
-                <i class="fas fa-bullseye"></i>
-                <div>
-                    <h3>Экспертиза</h3>
-                    <p>Решаем нестандартные логистические задачи</p>
-                </div>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-globe"></i>
-                <div>
-                    <h3>География</h3>
-                    <p>Доставляем товар из 35+ стран</p>
-                </div>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-headset"></i>
-                <div>
-                    <h3>Поддержка 24/7</h3>
-                    <p>Всегда на связи для вас</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Services Section (с JPEG изображениями) -->
-<section id="services" class="services-overlap">
-    <div class="container">
-        <div class="services-grid">
             
-            <!-- Карточка 1: Промышленный сектор -->
-            <div class="service-card">
-                <div class="service-img-wrapper">
-                    <!-- Укажите путь к вашему первому JPG файлу -->
-                    <img src="card1.jpg" alt="Промышленный сектор">
+            <!-- Преимущества -->
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div><h3>Надёжность</h3><p>Гарантируем сроки и безопасность</p></div>
                 </div>
-                <div class="service-info">
-                    <h3>Промышленный сектор</h3>
-                    <p>Поставка и установка промышленных узлов и производственных линий.</p>
-                    <a href="#" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                <div class="feature-item">
+                    <i class="fas fa-bullseye"></i>
+                    <div><h3>Экспертиза</h3><p>Решаем нестандартные задачи</p></div>
                 </div>
-            </div>
-
-            <!-- Карточка 2: высокоавтоматизированые цеха -->
-            <div class="service-card">
-                <div class="service-img-wrapper">
-                    <!-- Укажите путь к вашему второму JPG файлу -->
-                    <img src="card2.jpg" alt="высокоавтоматизированые цеха">
+                <div class="feature-item">
+                    <i class="fas fa-globe"></i>
+                    <div><h3>География</h3><p>Доставляем товар из 35+ стран</p></div>
                 </div>
-                <div class="service-info">
-                    <h3>высокоавтоматизированое производство</h3>
-                    <p>Снабжение и обслуживание высокоавтоматизированых цехов.</p>
-                    <a href="#" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                <div class="feature-item">
+                    <i class="fas fa-headset"></i>
+                    <div><h3>Поддержка 24/7</h3><p>Всегда на связи для вас</p></div>
                 </div>
             </div>
-
-            <!-- Карточка 3: Беспилотное летательное оборудование -->
-            <div class="service-card">
-                <div class="service-img-wrapper">
-                    <!-- Укажите путь к вашему третьему JPG файлу -->
-                    <img src="card3.jpg" alt="Беспилотное летательное оборудование">
-                </div>
-                <div class="service-info">
-                    <h3>БПЛА и квадракоптеры</h3>
-                    <p>Официальные поставки БПЛА и их составных частей. Помощь в оформлении документов.</p>
-                    <a href="#" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- 4. СЕКЦИЯ: НАШИ УСЛУГИ (services) -->
+    <section id="services" class="services-overlap">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 40px; font-size: 2rem;">Наши услуги</h2>
+            <div class="services-grid">
+                <!-- Карточка 1 -->
+                <div class="service-card">
+                    <div class="service-img-wrapper"><img src="card1.jpg" alt="Промышленный сектор"></div>
+                    <div class="service-info">
+                        <h3>Промышленный сектор</h3>
+                        <p>Поставка и установка промышленных узлов и производственных линий.</p>
+                        <a href="industrial.html" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Карточка 2 -->
+                <div class="service-card">
+                    <div class="service-img-wrapper"><img src="card2.jpg" alt="Высокоавтоматизированное производство"></div>
+                    <div class="service-info">
+                        <h3>Высокоавтоматизированное производство</h3>
+                        <p>Снабжение и обслуживание высокоавтоматизированных цехов.</p>
+                        <a href="production.html" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Карточка 3 -->
+                <div class="service-card">
+                    <div class="service-img-wrapper"><img src="card3.jpg" alt="БПЛА и квадрокоптеры"></div>
+                    <div class="service-info">
+                        <h3>БПЛА и квадрокоптеры</h3>
+                        <p>Официальные поставки БПЛА и их составных частей. Помощь в оформлении документов.</p>
+                        <a href="bpla.html" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. СЕКЦИЯ: ОТРАСЛИ / ПРОМЫШЛЕННЫЙ СЕКТОР (industrial) -->
+    <section id="industrial" class="industrial-section" style="padding: 80px 0;">
+        <div class="container">
+            <h2 class="section-title">Промышленный сектор</h2>
+            <p style="margin-top: 20px; color: #64748b;">Здесь размещается контент блока Отрасли (инжиниринг, параллельный импорт и шеф-монтаж).</p>
+        </div>
+    </section>
+
+    <!-- 6. СЕКЦИЯ: ПРОИЗВОДСТВО (production) — Скрыта из верхнего меню -->
+    <section id="production" class="production-section" style="padding: 80px 0; background-color: #f1f5f9;">
+        <div class="container">
+            <h2>Производство</h2>
+            <p style="color: #64748b;">Контент страницы Производства. Доступен при общем скроллинге сайта.</p>
+        </div>
+    </section>
+
+    <!-- 7. СЕКЦИЯ: БПЛА (bpla) — Скрыта из верхнего меню -->
+    <section id="bpla" class="bpla-section" style="padding: 80px 0;">
+        <div class="container">
+            <h2>Комплектующие БПЛА</h2>
+            <p style="color: #64748b;">Контент страницы БПЛА. Доступен при общем скроллинге сайта.</p>
+        </div>
+    </section>
+
+    <!-- 8. СЕКЦИЯ: О КОМПАНИИ (about) -->
+    <section id="about" class="about-section" style="padding: 80px 0; background-color: #f1f5f9;">
+        <div class="container">
+            <h2 class="about-title">О компании</h2>
+            <p style="color: #64748b;">Здесь размещаются ваши крупные золотые цифры статистики (10+, 35+, 24/7).</p>
+        </div>
+    </section>
+
+    <!-- 9. СЕКЦИЯ: КОНТАКТЫ (contacts) -->
+    <section id="contacts" class="contacts-section" style="padding: 80px 0;">
+        <div class="container">
+            <h2 class="section-title">Наши контакты</h2>
+            <p style="color: #64748b;">Здесь размещаются карточки контактов, форма и интерактивная Яндекс.Карта.</p>
+        </div>
+    </section>
+
+    <!-- 10. ФУТЕР САЙТА (Реквизиты и навигация) -->
+    <footer class="site-footer">
+        <div class="container footer-content-wrapper">
+            <div class="footer-info">
+                <div class="footer-company">© 2026 ООО «ТЕХНОХАБ»</div>
+                <div class="footer-requisites">
+                    <span><strong>ИНН:</strong> 7840126354</span>
+                    <span><strong>КПП:</strong> 784001001</span>
+                    <span><strong>ОГРН:</strong> 1267800034545</span>
+                </div>
+            </div>
+            
+            <nav class="footer-nav">
+                <!-- Внутренний скроллинг для футера -->
+                <a href="#services" class="footer-link">Услуги</a>
+                <a href="#industrial" class="footer-link">Отрасли</a>
+                <a href="#about" class="footer-link">О компании</a>
+                <a href="#contacts" class="footer-link">Контакты</a>
+            </nav>
+            
+            <div class="footer-legal">
+                <a href="/privacy-policy.pdf" target="_blank" class="legal-link">Политика конфиденциальности и защита персональных данных</a>
+                <p class="legal-disclaimer">
+                    Информация, размещенная на сайте, носит ознакомительный характер и не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ. Все права защищены.
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
