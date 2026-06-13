@@ -52,7 +52,7 @@
     <!-- 3. ГЛАВНЫЙ ЭКРАН (Hero Section) -->
     <section id="index" class="hero">
         <div class="hero-image-wrapper">
-            <img src="main.png" alt="Промышленный груз">
+            
         </div>
         <div class="container">
             <div class="hero-content">
@@ -390,20 +390,21 @@
             </div>
 
             <!-- Нижний блок: Интерактивная карта на всю ширину -->
-            <div class="map-wrapper">
-                <!-- Интерактивная Яндекс.Карта с точкой на пл. Александра Невского -->
-                <iframe src="https://yandex.ru" width="100%" height="450" frameborder="0" allowfullscreen="true" style="display:block;"></iframe>
-                
-                <!-- Информационная плашка поверх карты, как в дизайне -->
-                <div class="map-overlay-card">
-                    <h3>Наш офис в СПб</h3>
-                    <p class="map-address">пл. Александра Невского, д.2, лит. Е, оф. 301</p>
-                    <div class="metro-info">
-                        <span class="metro-icon">M</span>
-                        <span class="metro-name">м. Площадь Александра Невского — 3 минуты пешком</span>
-                    </div>
-                </div>
-            </div>
+<div class="map-wrapper" style="position: relative; width: 100; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0;">
+    
+    <!-- Картинка-подложка. Просто назовите ваш скриншот map.jpg и закиньте рядом с index.html -->
+    <img src="map.jpg" alt="Карта" style="width: 100%; height: 450px; object-fit: cover; display: block;">
+    
+    <!-- Информационная плашка поверх карты (остается на месте без изменений) -->
+    <div class="map-overlay-card">
+        <h3>Наш офис в СПб</h3>
+        <p class="map-address">пл. Александра Невского, д.2, лит. Е, оф. 301</p>
+        <div class="metro-info">
+            <span class="metro-icon">M</span>
+            <span class="metro-name">м.  Александра Невского — 3 минуты пешком</span>
+        </div>
+    </div>
+</div>
 
         </div>
     </section>

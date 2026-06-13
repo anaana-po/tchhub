@@ -172,10 +172,21 @@ img {
 .hero {
     position: relative;
     padding: 100px 0;
-    background-color: #cbcbcb;
-    color: #333333;
-    overflow: hidden;
+    background-image: linear-gradient(to right, 
+        rgba(255, 255, 255, 1) 0%,     /* Абсолютно белый цвет у левого края */
+        rgba(255, 255, 255, 0.9) 30%,   /* Плотный белый цвет под текстом */
+        rgba(255, 255, 255, 0.4) 70%,   /* Картинка плавно проявляется */
+        rgba(255, 255, 255, 0) 100%     /* Чистая картинка у правого края */
+    ), 
+    url('main.png'); /* Ваше изображение */
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #ffffff; /* Защитный белый цвет фона */
 }
+
 
 .hero-image-wrapper {
     position: absolute;
@@ -201,6 +212,7 @@ img {
 .hero-content {
     max-width: 600px;
     margin-bottom: 60px;
+    color: #383737
 }
 
 .hero h1 {
@@ -211,14 +223,14 @@ img {
 }
 
 .hero .subtitle {
-    color: #000000;
+    color: #1f1f1f;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 .hero-descr {
     font-size: 1.2rem;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 35px;
 }
 
@@ -227,17 +239,19 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+    color: #000000
 }
 
 .feature-item {
     display: flex;
     gap: 15px;
     align-items: flex-start;
+    color: #000000
 }
 
 .feature-item i {
     font-size: 1.5rem;
-    color: #626262;
+    color: #000000;
     margin-top: 3px;
 }
 
@@ -248,7 +262,7 @@ img {
 
 .feature-item p {
     font-size: 0.85rem;
-    color: #343434;
+    color: #1b1b1b;
 }
 
 /* ==========================================================================
