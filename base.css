@@ -13,7 +13,7 @@ html {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #334155;
+    color: #7e7e7f;
     background-color: #f8fafc;
     line-height: 1.5;
     min-height: 100vh;
@@ -58,7 +58,7 @@ img {
 }
 
 .btn::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -72,7 +72,7 @@ img {
 
 .btn:hover {
     transform: translateY(-2px);
-    color: #0f172a;
+    color: #790000;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.15);
 }
 
@@ -81,12 +81,12 @@ img {
 }
 
 .btn-primary {
-    background-color: #2563eb;
+    background-color: #790000;
     color: #fff;
 }
 
 .btn-accent {
-    background-color: #2563eb;
+    background-color: #790000;
     color: #fff;
     padding: 15px 30px;
 }
@@ -95,13 +95,18 @@ img {
     transform: translateY(0);
 }
 
+.btn-more {
+    color: #790000;
+    font-size: 20px;
+}
+
 /* ==========================================================================
    2. ШАПКА САЙТА (Top Bar & Main Header)
    ========================================================================== */
 .top-bar {
     background-color: #000000;
     color: #fff;
-    font-size: 13px;
+    font-size: 15px;
     padding: 10px 0;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
@@ -139,12 +144,12 @@ img {
 
 .nav-menu a {
     font-weight: 500;
-    color: #475569;
+    color: #626c7b;
     transition: color 0.2s;
 }
 
 .nav-menu a:hover {
-    color: #2563eb;
+    color: #000000;
 }
 
 .header-actions {
@@ -157,7 +162,7 @@ img {
     background: none;
     border: none;
     font-size: 1.1rem;
-    color: #64748b;
+    color: #697079;
     cursor: pointer;
 }
 
@@ -167,8 +172,8 @@ img {
 .hero {
     position: relative;
     padding: 100px 0;
-    background-color: #0f172a;
-    color: #ffffff;
+    background-color: #cbcbcb;
+    color: #333333;
     overflow: hidden;
 }
 
@@ -206,14 +211,14 @@ img {
 }
 
 .hero .subtitle {
-    color: #38bdf8;
+    color: #000000;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 .hero-descr {
     font-size: 1.2rem;
-    color: #cbd5e1;
+    color: #ffffff;
     margin-bottom: 35px;
 }
 
@@ -232,7 +237,7 @@ img {
 
 .feature-item i {
     font-size: 1.5rem;
-    color: #38bdf8;
+    color: #626262;
     margin-top: 3px;
 }
 
@@ -243,11 +248,11 @@ img {
 
 .feature-item p {
     font-size: 0.85rem;
-    color: #94a3b8;
+    color: #343434;
 }
 
 /* ==========================================================================
-   4. СЕКЦИЯ 2: Отросли (pupu)
+   4. СЕКЦИЯ: Отросли (pupu)
    ========================================================================== */
 .pupu-overlap {
     padding: 100px 0;
@@ -257,7 +262,7 @@ img {
 .section-title {
     font-size: 2.2rem;
     font-weight: 700;
-    color: #0f172a;
+    color: #666666;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -306,83 +311,29 @@ img {
 
 .pupu-info h3 {
     font-size: 1.25rem;
-    color: #0f172a;
+    color: #697079;
     margin-bottom: 12px;
 }
 
 .-info p {
     font-size: 0.95rem;
-    color: #64748b;
+    color: #494949;
     margin-bottom: 20px;
     flex-grow: 1;
 }
+
 
 /* ==========================================================================
    5. СЕКЦИЯ 3: О компании (About)
    ========================================================================== */
 
-
-
-
-
-/* ==========================================================================
-   5. СЕКЦИЯ 3: ПРОМЫШЛЕННЫЙ СЕКТОР (Industrial)
-   ========================================================================== */
-.industrial-section {
-    padding: 100px 0;
-    background-color: #ffffff;
-}
-
-.industrial-container {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 60px;
-    align-items: center;
-}
-
-.industrial-image-box img {
-    border-radius: 12px;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08);
-}
-
-.industrial-title {
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: #0f172a;
-    margin-bottom: 25px;
-}
-
-.industrial-text-block {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    font-size: 1.05rem;
-    color: #475569;
-    margin-bottom: 35px;
-}
-
-/* ==========================================================================
-   6. СЕКЦИИ 4 И 5: ПРОИЗВОДСТВО И БПЛА (Production & Bpla)
-   ========================================================================== */
-.production-section, .bpla-section {
-    padding: 100px 0;
-    background-color: #f1f5f9;
-}
-
-.bpla-section {
-    background-color: #ffffff;
-}
-
-/* ==========================================================================
-   7. СЕКЦИЯ 6: О КОМПАНИИ (About с золотыми цифрами)
-   ========================================================================== */
 .about-section {
     position: relative;
     padding: 120px 0;
     background-color: #f8fafc;
     width: 100%;
     overflow: hidden;
-    background-image: url('background.png'); 
+    background-image: url('image_about.png'); 
     background-position: right center; 
     background-repeat: no-repeat;
     background-size: contain; 
@@ -419,7 +370,7 @@ img {
   font-size: 2.6rem;
   font-weight: 700;
   margin-bottom: 25px;
-  background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+  background: linear-gradient(135deg, #656565 0%, #c2c2c2 25%, #717171 50%, #5c5c5c 75%, #6a6a6a 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -430,7 +381,7 @@ img {
 .about-lead {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #475569;
+    color: #3a3a3a;
 }
 
 .about-stats-grid {
@@ -454,7 +405,7 @@ img {
 
 .stat-number span {
   display: inline-block;
-  background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+  background: linear-gradient(135deg, #a80d0d 0%, #c20202 25%, #cd1111 50%, #ee8585 75%, #6f0101 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -463,11 +414,176 @@ img {
 
 .stat-desc {
   font-size: 0.95rem;
-  color: #64748b;
+  color: #4d4d4d;
 }
 
+
 /* ==========================================================================
-   8. СЕКЦИЯ 7: КОНТАКТЫ И КАРТА (Contacts)
+   4. СЕКЦИЯ 2: НАШИ УСЛУГИ (Services Overlap)
+   ========================================================================== */
+.specializations {
+    position: relative;
+    padding: 100px 0; /* Ваша стандартная высота секций для ПК */
+    color: #ffffff;
+    
+    /* Темно-синий промышленный оверлей (Overlay) поверх картинки оборудования */
+    background: url('image_serv.jpg') center/cover no-repeat fixed;
+    width: 100%;
+}
+
+/* Сетка наследует ваши отступы колонок (column-gap: 60px, row-gap: 40px) */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Строго 2 колонки на ПК */
+    column-gap: 60px;
+    row-gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* Отдельный элемент (флексбокс с выравниванием по верхнему краю) */
+.service-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Интервал между иконкой и текстом */
+    min-width: 0;
+}
+
+/* Контейнер иконки (сохраняет пропорции и не сжимается) */
+.service-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8a0000;
+}
+
+.service-icon svg {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+/* Текстовые стили */
+.service-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+
+
+/* ==========================================================================
+   7. СЕКЦИЯ: Industrials (IPB)
+   ========================================================================== */
+.industrial-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.industrial-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.industrial-image-box img {
+    border-radius: 12px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08);
+}
+
+.industrial-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #3e4651;
+    margin-bottom: 15px;
+}
+
+.industrial-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1rem;
+    color: #475569;
+    margin-bottom: 35px;
+}
+
+
+<!--production-->
+.production-section {
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+
+.production-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.productiona-image-box img {
+    border-radius: 12px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08);
+}
+
+.production-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #3e4651;
+    margin-bottom: 25px;
+}
+
+.production-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.rem;
+    color: #475569;
+    margin-bottom: 35px;
+}
+
+
+    <!--bpla-->
+
+.bpla-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.bpla-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.bpla-image-box img {
+    border-radius: 12px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08);
+}
+
+.bpla-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #3e4651;
+    margin-bottom: 25px;
+}
+
+.bpla-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1rem;
+    color: #475569;
+    margin-bottom: 35px;
+}
+
+
+/* ==========================================================================
+   8. СЕКЦИЯ: КОНТАКТЫ И КАРТА (Contacts)
    ========================================================================== */
 .contacts-section {
     padding: 100px 0;
