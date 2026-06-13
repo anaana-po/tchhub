@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — ТЕХНОХАБ</title>
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+
+    <section class="contacts-section">
+        <div class="container">
+            <h2 class="section-title">Наши контакты</h2>
+            
+            <!-- Верхний блок: 4 карточки контактов -->
+            <div class="contacts-grid">
+                
+                <!-- Офис -->
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>Офис</h3>
+                        <p>191167, г.Санкт-Петербург, площадь Александра Невского, д.2, литера Е</p>
+                    </div>
+                </div>
+
+                <!-- Телефон -->
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>Телефон</h3>
+                        <a href="tel:+79215809000" class="contact-link">+7 (921) 580-9000</a>
+                        <span class="card-note">Пн-Пт с 9:00 до 18:00</span>
+                    </div>
+                </div>
+
+                <!-- E-mail -->
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>E-mail</h3>
+                        <a href="mailto:info@tch-hub.ru" class="contact-link">info@tch-hub.ru</a>
+                        <span class="card-note">Ответим в течение 1 часа</span>
+                    </div>
+                </div>
+
+                <!-- Поддержка -->
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 18v-6a9 9 0 0118 0v6M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3M3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>Поддержка 24/7</h3>
+                        <p>Персональный менеджер сопровождает проект на всех этапах</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Нижний блок: Интерактивная карта на всю ширину -->
+            <div class="map-wrapper">
+                <!-- Интерактивная Яндекс.Карта с точкой на пл. Александра Невского -->
+                <iframe src="https://yandex.ru" width="100%" height="450" frameborder="0" allowfullscreen="true" style="display:block;"></iframe>
+                
+                <!-- Информационная плашка поверх карты, как в дизайне -->
+                <div class="map-overlay-card">
+                    <h3>Наш офис в СПб</h3>
+                    <p class="map-address">пл. Александра Невского, д.2, лит. Е, оф. 301</p>
+                    <div class="metro-info">
+                        <span class="metro-icon">M</span>
+                        <span class="metro-name">м. Площадь Александра Невского — 3 минуты пешком</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<!-- Футер сайта -->
+
+<footer class="site-footer">
+    <div class="container footer-container">
+        
+        <!-- Левый блок: Компания и реквизиты -->
+        <div class="footer-info">
+            <div class="footer-company">© 2026 ООО «ТЕХНОХАБ»</div>
+            <div class="footer-requisites">
+                <span><strong>ИНН:</strong> 7840126354</span>
+                <span><strong>КПП:</strong> 784001001</span>
+                <span><strong>ОГРН:</strong> 1267800034545</span>
+            </div>
+        </div>
+
+        <!-- Средний блок: Навигационные ссылки -->
+        <nav class="footer-nav">
+            <a href="industries.html" class="footer-link">Отрасли</a>
+            <a href="services.html" class="footer-link">Услуги</a>
+            <a href="about.html" class="footer-link">О компании</a>
+            <a href="contacts.html" class="footer-link footer-link-active">Контакты</a>
+        </nav>
+
+        <!-- Правый блок: Правовая информация по закону -->
+        <div class="footer-legal">
+            <a href="/privacy-policy.pdf" target="_blank" class="legal-link">Политика конфиденциальности и защита персональных данных</a>
+            <p class="legal-disclaimer">
+                Информация, размещенная на сайте, носит ознакомительный характер и не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ. Все права защищены.
+            </p>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>

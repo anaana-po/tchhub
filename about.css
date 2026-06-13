@@ -1,0 +1,151 @@
+html {
+    scroll-behavior: smooth; /* Включает плавную анимацию прокрутки */
+}/* --- БАЗОВЫЕ НАСТРОЙКИ СТИЛЯ И TOP BAR (СОХРАНЕНЫ) --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3b3b3b;
+    background-color: #f8f9fa;
+    line-height: 1.5;
+}
+
+a {
+    text-transform: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+   /* Главный контейнер секции */
+.about-section {
+  position: relative;
+  padding: 100px 0;
+  background-color: #f8f9fa; /* Базовый цвет фона страницы */
+  color: #333333;
+  width: 100%;
+  overflow: hidden;
+
+  /* ПОДГРУЗКА КАРТИНКИ: прижимаем к правому краю */
+  background-image: url('image.png'); 
+  background-position: right center; /* Картинка строго справа */
+  background-repeat: no-repeat;
+  background-size: contain; /* Картинка сохраняет пропорции и не обрезается */
+}
+
+/* Мягкое размытие (эффект Overlay) от картинки к тексту */
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Градиент идет слева направо: глухой фоновый цвет плавно становится прозрачным к правому краю */
+  background: linear-gradient(to right, 
+    #f8f9fa 0%, 
+    #f8f9fa 50%, 
+    rgba(248, 249, 250, 0.7) 70%, 
+    rgba(248, 249, 250, 0) 100%
+  );
+  z-index: 1; /* Оверлей лежит строго под текстом, но над картинкой */
+}
+
+/* Ограничивающий контейнер (выравнивание контента) */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2; /* Приподнимает текст над фоновым оверлеем */
+  
+  /* Смещаем весь контент к левому краю */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+/* Верхний блок: Заголовок и описание */
+.about-header-block {
+  max-width: 600px; /* Ограничиваем ширину текста, чтобы он не залезал на картинку справа */
+  margin-bottom: 60px;
+}
+
+/* Заголовок "О компании" */
+.about-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+}
+
+/* Лидирующий текст */
+.about-lead {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+/* Нижний блок: Крупные цифры */
+.about-stats-grid {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap; /* Чтобы цифры аккуратно переносились на мобильных */
+  max-width: 750px; /* Тоже ограничиваем ширину блока цифр */
+}
+
+/* Элемент статистики */
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Крупные цифры */
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #b92525; /* Используем ваш красный акцентный цвет из body */
+  line-height: 1;
+}
+
+/* Описание под цифрами */
+.stat-desc {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #555555;
+}
+
+/* --- АДАПТИВНОСТЬ ДЛЯ СМАРТФОНОВ --- */
+@media (max-width: 992px) {
+  .about-section {
+    /* На планшетах и телефонах картинку лучше перенести в самый низ или убрать оверлей */
+    background-position: center bottom;
+    background-size: cover;
+    padding: 60px 0;
+  }
+  
+  .about-section::before {
+    /* Меняем градиент на вертикальный, чтобы текст сверху читался на фоне нижней картинки */
+    background: linear-gradient(to bottom, #f8f9fa 0%, #f8f9fa 60%, rgba(248, 249, 250, 0.4) 100%);
+  }
+
+  .about-header-block, .about-stats-grid {
+    max-width: 100%; /* На мобильных занимаем всю ширину */
+  }
+
+  .about-stats-grid {
+    gap: 30px;
+  }
+}
