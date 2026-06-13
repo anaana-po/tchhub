@@ -32,7 +32,7 @@ ul {
     color: #484747;
     /* Фоновое изображение + Синий оверлей (темно-синее полупрозрачное наложение) */
     background: linear-gradient(rgba(207, 208, 209, 0.85), rgba(158, 159, 160, 0.85)), 
-              url('background.png') center/cover no-repeat fixed;
+              url('img_serv.png') center/cover no-repeat fixed;
 }
 
 .spec-container {

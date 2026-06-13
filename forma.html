@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — ТЕХНОХАБ</title>
+    <link rel="stylesheet" href="forma.css">
+</head>
+
+<body>
+
+    <!-- Секция с формой и фоном справа -->
+    <section class="feedback-section">
+        <div class="container feedback-container">
+            
+            <!-- Левый блок: Сама форма -->
+            <div class="form-wrapper">
+                <h2 class="form-title">Оставить заявку</h2>
+                <p class="form-subtitle">Заполните форму, и наш менеджер свяжется с вами в течение 30 минут.</p>
+                
+                <form action="#" method="POST" class="main-form">
+                    
+                    <div class="form-group">
+                        <label for="first-name">Имя</label>
+                        <input type="text" id="first-name" name="first_name" placeholder="Иван" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Фамилия</label>
+                        <input type="text" id="last-name" name="last_name" placeholder="Иванов" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Номер телефона</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (999) 000-00-00" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Почта</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+                    </div>
+
+                    <!-- Галочка согласия (Закон №152-ФЗ) -->
+                    <div class="policy-checkbox">
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        <label for="agreement">
+                            Я даю свое <a href="/privacy-policy.pdf" target="_blank">согласие на обработку персональных данных</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Отправить</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Сохраняем футер без изменений -->
+    <footer class="site-footer">
+        <div class="container footer-content-wrapper">
+            
+            <div class="footer-info">
+                <div class="footer-company">© 2026 ООО «ТЕХНОХАБ»</div>
+                <div class="footer-requisites">
+                    <span><strong>ИНН:</strong> 7840126354</span>
+                    <span><strong>КПП:</strong> 784001001</span>
+                    <span><strong>ОГРН:</strong> 1267800034545</span>
+                </div>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="#" class="footer-link">Отрасли</a>
+                <a href="#" class="footer-link">Услуги</a>
+                <a href="#" class="footer-link">О компании</a>
+                <a href="#" class="footer-link">Контакты</a>
+            </nav>
+
+            <div class="footer-legal">
+                <a href="/privacy-policy.pdf" target="_blank" class="legal-link">Политика конфиденциальности и защита персональных данных</a>
+                <p class="legal-disclaimer">
+                    Информация, размещенная на сайте, носит ознакомительный характер и не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ. Все права защищены.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
